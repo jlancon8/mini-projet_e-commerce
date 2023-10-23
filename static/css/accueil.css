@@ -1,0 +1,269 @@
+
+body {
+    overflow-x: hidden;
+}
+
+.topparagraph {
+    animation-name: topparagraph-anim;
+    animation-duration: 1.7s;
+    text-align: center;
+
+}
+
+.slogan {
+    padding-bottom: 2%;
+}
+
+.accroche {
+    color: grey;
+    font-size: 17px;
+}
+
+.topbutton {
+    animation-name: topbutton-anim;
+    animation-duration: 1s;
+    text-align: center;
+}
+
+.buttonhref {
+    letter-spacing: 2px;
+    box-shadow: black 2px 2px 2px 0px;
+    padding: 1%;
+    padding-right: 3%;
+    padding-left: 3%;
+    border-style: solid;
+    border-width: 1px;
+    transition: 0.25s ease-in;
+}
+
+.buttonhref:hover {
+    color: white;
+    background-color: black;
+    box-shadow: white 2px 2px 2px 0px;
+    transition: 0.25s ease-in;
+}
+
+
+
+/* SLIDE SHOW */
+
+.image-slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    animation-name: slideshow-anim;
+    animation-duration: 1.5s;
+  }
+  
+  .slideimg {
+    width: 100%
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .7}
+    to {opacity: 1}
+  }
+
+.gererslide {
+    text-align: center;
+}
+
+.marqueconfiance {
+    padding: 1%;
+    text-align: center;
+}
+
+.marquestyle1, .marquestyle2, .marquestyle3 {
+    box-shadow: 3px 3px 6px 3px gray;
+    transition: opacity 2s ease, transform 2s ease;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.marquestyle1 {
+    opacity: 0;
+    transform: translateY(-25%);
+    transform: translateX(-25%);
+}
+
+.marquestyle2 {
+    opacity: 0;
+    transform: translateY(-30%);
+}
+
+.marquestyle3 {
+    opacity: 0;
+    transform: translateY(-25%);
+    transform: translateX(25%);
+}
+
+
+
+.marquestyle1.active {
+    opacity: 1;
+    transform: translateY(0%);
+    transform: translateX(0%);
+}
+
+.marquestyle2.active {
+    opacity: 1;
+    transform: translateY(0%);
+    transform: translateX(0%);
+}
+
+.marquestyle3.active {
+    opacity: 1;
+    transform: translateY(0%);
+    transform: translateX(0%);
+}
+
+/* ANIMATIONS */
+
+@keyframes topparagraph-anim {
+    from {
+        opacity: 0;
+        transform: translateY(30%);
+    } to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes topbutton-anim {
+    from {
+        opacity: 0;
+        transform: translateX(15%);
+    } to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideshow-anim {
+    from {
+        opacity: 0;
+        transform: translateY(25%)
+    } to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes lightanddark-anim {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+.image-slideshow {
+    box-shadow: 5px 5px 7px 5px gray;
+}
+
+
+
+
+
+
+/* DARK MODE OPTIONS */
+
+.dark-mode {
+    animation-name: lightanddark-anim;
+    animation-duration: 0.35s;
+}
+
+.light-mode {
+    animation-name: lightanddark-anim;
+    animation-duration: 0.7s;
+}
+
+.dark-mode p, .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6, .dark-mode span {
+    color: white;
+}
+
+.dark-mode .buttonhref {
+    box-shadow: rgb(255, 255, 255) 2px 2px 2px 0px;
+    border-style: solid white;
+}
+
+.dark-mode .buttonhref:hover {
+    color: black;
+    background-color: white;
+    box-shadow: rgb(0, 0, 0) 2px 2px 2px 0px;
+    transition: 0.25s ease-in;
+}
+
+
+.dark-mode .topbutton, .dark-mode a {
+    color: white;
+}
+
+.dark-mode .navbar {
+    color: white;
+    background-color: black;
+}
+
+.dark-mode .marquestyle1, .dark-mode .marquestyle2, .dark-mode .marquestyle3 {
+    background-color: white;
+
+
+
+}
+
+/* RESPONSIVE PAGE ACCUEIL */
+
+@media (min-width: 0px) and (max-width: 550px) {
+    .accroche {
+      font-size: 16px;
+    }
+    .slogan {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 759px) and (max-width: 1050px) {
+    .image-slideshow, img {
+      max-height: 300px;
+      max-width: 600px;
+  }
+  
+  .marquestyle1, .marquestyle2, .marquestyle3 {
+    max-height: 80px;
+    max-width: 210px;
+  
+  }
+  
+  }
+  
+  @media (min-width: 500px) and (max-width: 759px) {
+    .image-slideshow, img {
+      max-height: 200px;
+      max-width: 500px;
+  }
+  
+  .marquestyle1, .marquestyle2, .marquestyle3 {
+    max-height: 60px;
+    max-width: 140px;
+  
+  }
+  }
+  
+  @media (min-width: 320px) and (max-width: 500px) {
+    .image-slideshow, img {
+      max-height: 130px;
+      max-width: 260px;
+  }
+  
+  .marquestyle1, .marquestyle2, .marquestyle3 {
+    max-height: 40px;
+    max-width: 80px;
+  
+  }
+  }
+
