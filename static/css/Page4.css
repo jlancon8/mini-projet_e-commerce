@@ -1,0 +1,174 @@
+/* Page */
+
+.aa {
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.Shortboard {
+    margin-left: 150px;
+}
+
+.imgShortboard {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.Shortboard>h6 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.Shortboard>input {
+    width: 300px;
+    height: 40px;
+    margin-left: 200px;
+}
+
+.Shortboard>a {
+    max-width: 30px;
+    box-shadow: black 1px 1px 1px 0px;
+    padding: 2px;
+    border-style: solid;
+    border-width: 1px;
+    transition: 0.25s ease-in;
+}
+
+.Shortboard>a:hover {
+    color: white;
+    background-color: hsl(0, 0%, 0%);
+    box-shadow: white 2px 2px 2px 0px;
+    transition: 0.25s ease-in;
+}
+
+.Longboard {
+    margin-left: 150px;
+}
+
+.imgLongboard {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.Longboard>h6 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.Longboard>input {
+    width: 300px;
+    height: 40px;
+    margin-left: 200px;
+}
+
+.Longboard>a {
+    max-width: 30px;
+    box-shadow: black 1px 1px 1px 0px;
+    padding: 2px;
+    border-style: solid;
+    border-width: 1px;
+    transition: 0.25s ease-in;
+}
+
+.Longboard>a:hover {
+    color: white;
+    background-color: hsl(0, 0%, 0%);
+    box-shadow: white 2px 2px 2px 0px;
+    transition: 0.25s ease-in;
+}
+
+.block {
+    margin-right: 100px;
+    width: 500px;
+    border: 2px solid black;
+    padding: 10px;
+    float: right;
+}
+
+.block-flex {
+    display: flex;
+}
+
+.prix {
+    margin: 5px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: right;
+}
+
+.fina {
+    margin: 5px;
+    font-size: larger;
+    text-align: left;
+}
+
+.i {
+    text-align: left;
+}
+
+.block>input {
+    width: 300px;
+    height: 40px;
+    margin-left: 200px;
+}
+
+.block>a {
+    max-width: 30px;
+    box-shadow: black 1px 1px 1px 0px;
+    padding: 2px;
+    border-style: solid;
+    border-width: 1px;
+    transition: 0.25s ease-in;
+}
+
+.block>a:hover {
+    color: white;
+    background-color: hsl(0, 0%, 0%);
+    box-shadow: white 2px 2px 2px 0px;
+    transition: 0.25s ease-in;
+}
+
+.payer {
+    font-size: 30px;
+}
+
+.dark-mode p,
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
+.dark-mode span {
+    color: white;
+}
+
+.dark-mode .buttonhref {
+    box-shadow: rgb(255, 255, 255) 2px 2px 2px 0px;
+    border-style: solid white;
+}
+
+.dark-mode .buttonhref:hover {
+    color: black;
+    background-color: white;
+    box-shadow: rgb(0, 0, 0) 2px 2px 2px 0px;
+    transition: 0.25s ease-in;
+}
+
+.dark-mode .topbutton,
+.dark-mode a {
+    color: white;
+}
+
+.dark-mode .navbar {
+    color: white;
+    background-color: black;
+}
+
+.dark-mode .marquestyle1,
+.dark-mode .marquestyle2,
+.dark-mode .marquestyle3 {
+    background-color: white;
+}

@@ -1,0 +1,300 @@
+body {
+    font-family: 'Public Sans', sans-serif;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.header p {
+    color: black;
+}
+
+/* contnet */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+main,
+.product-load {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.product img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product a {
+    text-decoration: none;
+    color: white;
+}
+
+.product:hover {
+    box-shadow: 0 0 10px #ccc;
+    background-color: white;
+    transform: scale(1.01);
+    transition: all 0.3s ease-in-out;
+}
+
+.product:hover p {
+    color: black;
+}
+
+.product p {
+    padding: 3px;
+}
+
+.description {
+    visibility: hidden;
+    padding: 10px;
+}
+
+.product:hover .description {
+    visibility: visible;
+}
+
+/* Sidebar */
+aside {
+    flex: 1;
+    padding: 20px;
+    max-width: 200px;
+    margin: 10px;
+}
+
+.sort-field {
+    order: -1;
+}
+
+aside h2 {
+    text-align: center;
+}
+
+aside a {
+    text-decoration: none;
+    color: #333;
+}
+
+aside a:hover {
+    color: #666;
+}
+
+aside input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+aside input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+aside .pastille {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 1.5px solid black;
+}
+
+aside .pastille:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+aside .color {
+    display: grid;
+    grid-template-columns: repeat(5, 0.5fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    margin: 1px;
+}
+
+/* buttons */
+button {
+    letter-spacing: 2px;
+    background-color: white;
+    box-shadow: black 2px 2px 2px 0px;
+    padding: 1%;
+    border-style: solid;
+    border-width: 1px;
+    transition: 0.25s ease-in;
+}
+
+button:hover:not(.pastille) {
+    color: white;
+    background-color: hsl(0, 0%, 0%);
+    box-shadow: white 2px 2px 2px 0px;
+    transition: 0.25s ease-in;
+    cursor: pointer;
+}
+
+main button {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 50px;
+}
+
+.load-more button {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 750px;
+}
+
+.load-more button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.load-more button:focus {
+    outline: none;
+}
+
+.load-more a {
+    text-decoration: none;
+    color: white;
+}
+
+/* colors */
+.c1 {
+    background-color: #DF9167;
+}
+
+.c2 {
+    background-color: #7B61FF;
+}
+
+.c3 {
+    background-color: #219653;
+}
+
+.c4 {
+    background-color: #2F80ED;
+}
+
+.c5 {
+    background-color: #EB5757;
+}
+
+.c6 {
+    background-color: #56CCF2;
+}
+
+.c7 {
+    background-color: #4F4F4F;
+}
+
+.c8 {
+    background-color: #BB6BD9;
+}
+
+.c9 {
+    background-color: #F2F2F2;
+}
+
+.c10 {
+    background-color: #6FCF97;
+}
+
+/* Load More */
+.load-more {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.load-more button {
+    right: 3px;
+    width: 150px;
+    height: 50px;
+}
+
+#more-invisible {
+    display: none;
+}
+
+#more-visible {
+    display: block;
+}
+
+#pastille-panier {
+    color: black;
+    font-size: 15px;
+}
+
+/* Dark Mode */
+.dark-mode .navbar,
+.dark-mode .navbar a {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode .header p {
+    color: white;
+}
+
+.dark-mode .footer a {
+    background-color: black;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    aside {
+        order: 1;
+        flex: 0;
+        max-width: 100%;
+    }
+
+    aside .pastille {
+        margin: 1px;
+    }
+
+    aside .color {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    main {
+        order: 2;
+        flex: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+}
