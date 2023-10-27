@@ -330,7 +330,7 @@ hr {
         border-color: white transparent transparent transparent;
     }
 
-    .select-selected.select-arrow-active:after {
+    .dark-mode .select-selected.select-arrow-active:after {
         border-color: transparent transparent white;
     }
 
