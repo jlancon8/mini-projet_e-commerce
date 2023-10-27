@@ -4,8 +4,8 @@
     padding-top: 50px;
     padding-bottom: 50px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1.2fr)); /*prendre plus de place possible*/
-    gap: 0px; /*espace entre colonne*/
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1.2fr)); /* prendre le plus de place possible */
+    gap: 0px; 
     justify-items: center;
     max-width: 1000px;
     margin: 0 auto 30px auto;
@@ -13,7 +13,6 @@
 
 .leftfooter {
     margin-right: 150px;
-
 }
 
 .leftfooter>h6 {
@@ -25,14 +24,11 @@
     width: 300px;
     height: 40px;
     margin-bottom: 2%;
-
 }
 
 .leftfooter > input {
     margin-bottom: 25px;
 }
-
-
 
 .leftfooter > a {
     max-width: 80px;
@@ -58,8 +54,7 @@
 }
 
 .footercol h4 {
-    margin-bottom: 25px;
-   
+    margin-bottom: 25px;   
 }
 
 .footercol a {
@@ -80,10 +75,13 @@
     background-color: white;
     box-shadow: rgb(198, 196, 196) 2px 2px 2px 0px;
     transition: 0.25s ease-in;
-
 }
 
-/* RESPONSIVE */
+/* FIN OPTIONS DU DARK MODE */
+
+
+
+/* RESPONSIVE FOOTER */
 
 @media (min-width: 1063px) and (max-width: 1216px) {
     .footer {
@@ -96,28 +94,21 @@
     .footer {
         font-size: 12px;
         max-width: 600px;
-        grid-template-columns: repeat(auto-fit, minmax(50px, 1.2fr)); /*prendre plus de place possible*/
-        
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1.2fr)); /*prendre plus de place possible*/   
     }
-
     .footercol * {
         margin-left: 100px;
     }
-
     .leftfooter {
-        margin-right: 70px;
-    
-    }
-
-    
+        margin-right: 70px; 
+    }   
 }
 
 @media (min-width: 353px) and (max-width: 830px) {
     .footer {
         font-size: 10px;
         max-width: 600px;
-        grid-template-columns: repeat(auto-fit, minmax(50px, 1.2fr)); /*prendre plus de place possible*/
-        
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1.2fr)); /*prendre plus de place possible*/    
     }
 
     .footer h6 {
@@ -127,8 +118,6 @@
     .footercol * {
         margin: auto;
         margin-left: 0px;
-      
-     
     }
 
     .footercol h4 {
@@ -142,18 +131,15 @@
         margin-right: 0px;
         margin: auto;
         position: absolute;
-        text-align: center;
-    
+        text-align: center; 
     }
 }
 
-@media (min-width: 0px) and (max-width: 353px) {
-    
+@media (min-width: 0px) and (max-width: 353px) {  
     .footer {
         font-size: 10px;
         max-width: 600px;
-        grid-template-columns: repeat(auto-fit, minmax(50px, 1.2fr)); /*prendre plus de place possible*/
-        
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1.2fr)); /*prendre plus de place possible*/   
     }
 
     .footer h6 {
@@ -162,10 +148,7 @@
 
     .footercol * {
         margin: auto;
-        margin-left: 0px;
-       
-      
-     
+        margin-left: 0px;    
     }
 
 
@@ -181,12 +164,10 @@
         margin-right: 0px;
         margin: auto;
         position: absolute;
-        text-align: center;
-    
+        text-align: center; 
     }
-
-
-
 }
+
+/* FIN RESPONSIVE */
 
 
