@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 * {
-   font-family: 'Montserrat', 'sans-serif';
-    margin:0;
-    padding:0;
+    font-family: 'Montserrat', 'sans-serif';
+    margin: 0;
+    padding: 0;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
 
-.container{
+.container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -20,21 +20,21 @@ body{
     padding-bottom: 100px;
 }
 
-.image-slideshow img{
+.image-slideshow img {
     width: 556px;
     height: 549px;
     top: 147px;
     left: 110px;
 }
 
-.images{
+.images {
     position: absolute;
     display: none;
     animation-name: pictureAnimation;
     animation-duration: 1.5s;
 }
 
-.image1{
+.image1 {
     display: block;
     width: 556px;
     height: 549px;
@@ -42,7 +42,7 @@ body{
     left: 190px;
 }
 
-.navigationButtons .previous{
+.navigationButtons .previous {
     position: absolute;
     z-index: 10;
     font-size: 20px;
@@ -52,7 +52,7 @@ body{
     color: white;
 }
 
-.navigationButtons .next{
+.navigationButtons .next {
     position: absolute;
     z-index: 10;
     top: 55%;
@@ -61,8 +61,8 @@ body{
     color: white;
 }
 
-.navigationButtons .btn{
-    position:absolute;
+.navigationButtons .btn {
+    position: absolute;
     background-color: black;
     cursor: pointer;
     border-radius: 50%;
@@ -75,23 +75,28 @@ body{
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
 }
 
-.navigationButtons .btn:hover{
+.navigationButtons .btn:hover {
     background-color: rgba(128, 128, 128, 1);
     color: white;
     transition: 0.15s ease-in;
 }
 
 @keyframes pictureAnimation {
-    from {opacity: .5} 
-    to {opacity: 1}
+    from {
+        opacity: .5
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
-.product_information{
+.product_information {
     padding-right: 5%;
     margin-top: -15px;
 }
 
-.product_information h1{
+.product_information h1 {
     width: 519px;
     height: 48px;
     top: 148px;
@@ -99,7 +104,7 @@ body{
 
 }
 
-.product_information h2{
+.product_information h2 {
     width: 519px;
     height: 36px;
     top: 196px;
@@ -107,19 +112,19 @@ body{
 
 }
 
-.product_information p{
+.product_information p {
     width: 357px;
     height: 96px;
     top: 247px;
     left: 762px;
 }
 
-.input{
+.input {
     display: flex;
     flex-direction: row;
 }
 
-.counter{
+.counter {
     width: 167px;
     height: 50px;
     top: 358px;
@@ -131,7 +136,7 @@ body{
     border: 1px solid black;
 }
 
-.counter span{
+.counter span {
     width: 100%;
     display: flex;
     align-items: center;
@@ -142,26 +147,26 @@ body{
 }
 
 
-.counter span.minus:hover{
+.counter span.minus:hover {
     transition: 0.25s ease-in;
     background-color: rgba(128, 128, 128, 1);
     color: white;
 }
 
-.counter span.plus:hover{
+.counter span.plus:hover {
     transition: 0.25s ease-in;
     background-color: rgba(128, 128, 128, 1);
     color: white;
 }
 
 
-.counter span.num{
+.counter span.num {
     display: flex;
     justify-content: center;
     pointer-events: none;
 }
 
-.dropdown{
+.dropdown {
     width: 167px;
     height: 50px;
     margin-top: 15%;
@@ -170,11 +175,11 @@ body{
     border: 1px solid black;
 }
 
-.dropdown select{
+.dropdown select {
     display: none;
 }
 
-.select-selected{
+.select-selected {
     color: black;
 }
 
@@ -194,11 +199,12 @@ body{
     top: 15px;
 }
 
-.select-items div,.select-selected {
+.select-items div,
+.select-selected {
     background-color: white;
     padding: 15px 16px;
     cursor: pointer;
-    
+
 }
 
 
@@ -216,11 +222,12 @@ body{
     display: none;
 }
 
-.select-items div:hover, .same-as-selected {
+.select-items div:hover,
+.same-as-selected {
     background-color: rgba(128, 128, 128, 1)
 }
 
-.info_model{
+.info_model {
     width: 350px;
     top: 424px;
     left: 762px;
@@ -228,13 +235,13 @@ body{
     margin-top: 15px;
 }
 
-.buyButtons{
+.buyButtons {
     display: flex;
     flex-direction: row;
     margin-left: -2px;
 }
 
-.button{
+.button {
     background-color: black;
     color: white;
     border: none;
@@ -247,62 +254,66 @@ body{
     box-shadow: black 2px 2px 2px 0px;
 }
 
-#addNow{
+#addNow {
     background-color: #2F80ED;
     margin-left: 10px;
 }
 
-#addButton:hover{
+#addButton:hover {
     background-color: black;
     box-shadow: white 2px 2px 2px 0px;
     transition: 0.25s ease-out;
 }
 
-#addNow:hover{
+#addNow:hover {
     background-color: #0a4491;
     box-shadow: white 2px 2px 2px 0px;
     transition: 0.25s ease-out;
 }
 
-hr{
+hr {
     margin-top: 20px;
 }
 
 
-/* DARK MODE */ 
+/* DARK MODE */
 
 .dark-mode {
-    
-    .navbar{
+
+    .navbar {
         background-color: black;
         border-color: white;
     }
 
-    h1, h2, h4, h6, p{
+    h1,
+    h2,
+    h4,
+    h6,
+    p {
         color: white;
     }
 
-    .counter{
+    .counter {
         border: 1px solid white;
     }
 
-    .counter > span{
+    .counter>span {
         color: white;
     }
 
-    .counter span.minus:hover{
+    .counter span.minus:hover {
         color: black;
     }
 
-    .counter span.plus:hover{
+    .counter span.plus:hover {
         color: black;
     }
 
-    .dropdown{
+    .dropdown {
         border: 1px solid white;
     }
 
-    .select-selected{
+    .select-selected {
         color: white;
     }
 
@@ -311,53 +322,55 @@ hr{
     }
 
     .select-selected.select-arrow-active:after {
-        border-color: transparent transparent white ;
+        border-color: transparent transparent white;
     }
 
-    .select-items{
+    .select-items {
         color: white;
     }
 
-    .select-items div,.select-selected {
+    .select-items div,
+    .select-selected {
         background-color: black;
     }
 
-    .select-items div:hover, .same-as-selected {
+    .select-items div:hover,
+    .same-as-selected {
         background-color: rgba(128, 128, 128, 1)
     }
 
-    .button{
+    .button {
         box-shadow: white 2px 2px 2px 0px;
         color: black;
     }
 
-    .buyButtons > #addButton{
+    .buyButtons>#addButton {
         background-color: rgb(125, 122, 122);
     }
 
-    #addNow{
+    #addNow {
         background-color: #2F80ED;
     }
 
-    #addButton:hover{
+    #addButton:hover {
         background-color: rgb(97, 96, 96);
         color: white;
         box-shadow: black 2px 2px 2px 0px;
         transition: 0.25s ease-out;
     }
 
-    #addNow:hover{
+    #addNow:hover {
         background-color: #0a4491;
         color: white;
         box-shadow: black 2px 2px 2px 0px;
         transition: 0.25s ease-out;
     }
 
-    .navbar > a{
+    .navbar>a {
         color: white;
     }
 
-    .leftfooter > a{
+    .leftfooter>a {
         background-color: white;
         box-shadow: rgb(255, 255, 255) 2px 2px 2px 0px;
     }
@@ -369,29 +382,29 @@ hr{
 
 @media (max-width: 768px) {
 
-    body{
+    body {
         font-size: 16px;
         overflow-x: hidden;
     }
 
-    .container{
+    .container {
         display: flex;
         flex-direction: column;
     }
 
-    .navigationButtons .previous{
+    .navigationButtons .previous {
         top: 28%;
         left: 9%;
         font-size: 30px;
     }
-    
-    .navigationButtons .next{
+
+    .navigationButtons .next {
         top: 28%;
         left: 77%;
         font-size: 30px;
     }
 
-    .counter span{
+    .counter span {
         width: 100%;
         display: flex;
         align-items: center;
@@ -401,76 +414,72 @@ hr{
         cursor: pointer;
     }
 
-    .navigationButtons .btn{
+    .navigationButtons .btn {
         width: 40px;
         height: 40px;
         z-index: 1;
     }
 
-    .image-slideshow .images{
+    .image-slideshow .images {
         top: 100px;
         left: 31px;
     }
 
-    .images img{
+    .images img {
         width: 325px;
         height: 291px;
     }
 
-    .info_product{
+    .info_product {
         display: flex;
         flex-direction: column;
         margin-top: 100%;
         margin-left: 3%;
     }
 
-    .info_product > h1{
+    .info_product>h1 {
         width: 325px;
         height: 50px;
     }
 
-    .info{
+    .info {
         display: flex;
         flex-direction: column-reverse;
     }
 
-    .info > h2{
+    .info>h2 {
         margin-top: 30px;
     }
 
-    .input{
+    .input {
         margin-top: -40px;
         margin-left: 3%;
     }
 
-    .info_model{
+    .info_model {
         margin-left: 3%;
     }
 
-    .buyButtons{
+    .buyButtons {
         display: flex;
         flex-direction: row-reverse;
         margin-left: 3%;
     }
 
-    .button{
+    .button {
         text-align: center;
         padding: 10px;
         font-size: 16px;
     }
 
-    #addNow{
+    #addNow {
         width: 104px;
         margin-left: -1.5px;
-        margin-right: 10px ;
+        margin-right: 10px;
     }
 
-    #addButton{
+    #addButton {
         width: 198px;
         padding-top: 20px;
     }
 }
-
-
-
-
