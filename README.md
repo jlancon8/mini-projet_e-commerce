@@ -7,7 +7,7 @@
 
 - [Fulcrand Lucas]
 - [Fumey Jean Jean Axel]  
-- [Frohley Jean-Baptiste]
+- [Froehly Jean-Baptiste]
 - [Johan Lancon]
 
 <br>
@@ -26,7 +26,7 @@ Ce mini projet consistait à crée un mini site d'e-commerce responsive sur le s
 #### Axel Fumey Jean-Jean
   --> <a href="https://jlancon8.github.io/mini-projet_e-commerce/panier.html" target="_blank">Page panier</a>
 <br>
-#### Jean-Baptiste Frohley
+#### Jean-Baptiste Froehly
   --> <a href="https://jlancon8.github.io/mini-projet_e-commerce/magasin.html" target="_blank">Page magasin</a>
 <br>
 #### Johan Lançon :
