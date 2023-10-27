@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Product_Page_style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <title> Produit </title>
+</head>
+
+<body>
+    <!-- NAVBAR DEBUT -->
+    <div class="navbar-container">
+        <div class="navbar">
+            <a href="" class="item">Accueil</a>
+            <a href="" class="itemactive">Produits</a>
+            <a href="" class="item">Magasin</a>
+            <a href="" class="item">Panier</a>
+            <a href="" class="itemconnexion">Connexion</a>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+
+           
+            
+                <ul class="menu__box">
+                  <li><a class="menu__item" href="#">Accueil</a></li>
+                  <li><a class="menu__item" href="#">Produits</a></li>
+                  <li><a class="menu__item" href="#">Magasin</a></li>
+                  <li><a class="menu__item" href="#">Panier</a></li>
+                  <li><a class="menu__item" href="#">Connexion</a></li>
+                </ul>
+                
+              </div>
+            <!-- BOUTON LIGHT/DARK -->
+            <div class="theme-container shadow-dark">
+                <img id="theme-icon" src="https://www.uplooder.net/img/image/2/addf703a24a12d030968858e0879b11e/sun.svg" alt="ERR">
+              </div>
+            
+     
+
+              <!-- FIN BOUTON -->
+        </div>
+    </div>
+    <!-- NAVBAR FIN -->
+
+
+    <div class="container">
+        <div class="showProduct">
+            <div class="navigationButtons">
+                <div class="previous btn"><</div>
+                <div class="next btn">></div>
+            </div>
+            <div class="image-slideshow">
+                <div class="images image1">
+                    <img src="SunRider_Grom1.jpg" alt="planche de surf SunRider dessus">
+                </div>
+                <div class="images image2">
+                    <img src="SunRider_Grom2.jpg" alt="planche de surf SunRider avant">
+                </div>
+                <div class="images image3">
+                    <img src="SunRider_Grom3.jpg" alt="planche de surf SunRider face avant ">
+                </div>
+                <div class="images image4">
+                    <img src="SunRider_Grom4.jpg" alt="planche de surf SunRider face arrière">
+                </div>
+            </div>
+        </div>
+        <div class="product_information">
+            <div class="info_product">
+                <h1> SunRider Grom </h1>
+                <div class="info">
+                    <h2> 349€ </h2>
+                    <p>
+                        La SunRider Grom est une planche de surf spécialement conçue pour les jeunes surfeurs en
+                        herbe.
+                        Elle est légère et facile à manier, offrant un excellent équilibre pour les débutants.
+                        Elle est idéale pour apprendre à surfer tout en s'amusant.
+                    </p>
+                </div>
+            </div>
+            <div class="input">
+                <div class="counter">
+                    <span class="minus">-</span>
+                    <span class="num">1</span>
+                    <span class="plus">+</span>
+                </div>
+                <div class="dropdown">
+                    <select>
+                        <option value="0">Tailles</option>
+                        <option value="1">5'2"</option>
+                        <option value="2">5'4"</option>
+                        <option value="3">5'8"</option>
+                        <option value="4">6'0"</option>
+                    </select>
+                </div>
+            </div>
+            <p class="info_model">
+                Les tailles de cette planche vont de 1.53m à 1.83m.
+            </p>
+            <div class="buyButtons">
+                <a href="#" class="button" id="addButton">Ajouter au panier</a>
+                <a href="#" class="button" id="addNow">Acheter maintenant</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER DEBUT -->
+
+    <br>
+    <hr>
+    <div class="footer">
+        <div class="leftfooter">
+            <h2>Inscrivez vous pour recevoir nos nouveautés !</h2>
+            <h6>Sois le premier à être au courant à propos de nos offres spécial</h6>
+            <input type="text" placeholder="Adresse e-mail">
+            <a href="">S'inscrire</a>
+        </div>
+        <div class="footercol">
+            <h4>Magasin</h4>
+            <a href="">Hommes</a>
+            <a href="">Femmes</a>
+            <a href="">Enfants</a>
+            <a href="">Vêtements</a>
+            <a href="">Planche de surf</a>
+            <a href="">Carte de crédit</a>
+            <a href="">Evenement</a>
+            <a href="">Nouveautés</a>
+        </div>
+        <div class="footercol">
+            <h4>Aide</h4>
+            <a href="">Centre d'aide</a>
+            <a href="">Charte du site</a>
+            <a href="">Contactez nous</a>
+        </div>
+        <div class="footercol">
+            <h4>A propos</h4>
+            <a href="">A propos de nous</a>
+            <a href="">Notre histoire</a>
+            <a href="">Notre technologie</a>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- FOOTER FIN -->
+
+
+    <!-- Script pour le carousel -->
+    <script>
+
+        const previous = document.querySelector('.previous');
+        const next = document.querySelector('.next');
+        const images = document.querySelector('.image-slideshow').children;
+        const totalImages = images.length;
+        let currentIndex = 0;
+
+
+        // Evenement pour les boutons previous et next
+        previous.addEventListener('click', () => {
+            previousImage()
+        })
+
+        next.addEventListener('click', () => {
+            nextImage();
+        })
+
+
+        // Fonction pour aller à l'image suivante
+        function nextImage() {
+
+            images[currentIndex].classList.remove('image1');
+            if (currentIndex == totalImages - 1) {
+                currentIndex = 0;
+            }
+            else {
+                currentIndex++;
+            }
+
+            images[currentIndex].classList.add('image1');
+
+        }
+
+        // Fonction pour aller à l'image précédente
+        function previousImage() {
+
+            images[currentIndex].classList.remove('image1');
+            if (currentIndex == 0) {
+                currentIndex = totalImages - 1;
+            }
+            else {
+                currentIndex--;
+            }
+
+            images[currentIndex].classList.add('image1');
+
+        }
+
+    </script>
+
+    <!-- Script pour le compteur -->
+    <script>
+        const plus = document.querySelector(".plus"),
+            minus = document.querySelector(".minus"),
+            num = document.querySelector(".num");
+
+        let aPlus = 1; // Le numéro ne sera jamais à 0
+
+        // Le numéro (num) augmente de 1 quand on clique sur "+"
+        plus.addEventListener("click", () => {
+            aPlus++;
+            num.innerText = aPlus;
+            console.log(aPlus);
+        });
+
+        // Le numéro diminue de 1 quand on clique sur "-" si il est supérieur à 1
+        minus.addEventListener("click", () => {
+            if (aPlus > 1) {
+                aPlus--;
+                num.innerText = aPlus;
+            }
+        });
+    </script>
+
+    <!-- Script pour la liste déroulante -->
+    <script> 
+        var x, i, j, l, ll, selElmnt, a, b, c;
+
+        /* Va regarder n'importe quel élément avec la classe "custom-select": */
+
+        x = document.getElementsByClassName("dropdown");
+        l = x.length;
+        for (i = 0; i < l; i++) {
+            selElmnt = x[i].getElementsByTagName("select")[0];
+            ll = selElmnt.length;
+
+            /* Pour chaque élément, créer une nouvelle DIV qui sera l'élément sélectionné : */
+
+            a = document.createElement("DIV");
+            a.setAttribute("class", "select-selected");
+            a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+            x[i].appendChild(a);
+
+            /* Pour chaque élément, créer une nouvelle DIV qui contiendra la liste des options : */
+
+            b = document.createElement("DIV");
+            b.setAttribute("class", "select-items select-hide");
+            for (j = 1; j < ll; j++) {
+
+                /* Pour chaque option dans l'élément de sélection original,
+                créer un nouveau DIV qui servira d'élément d'option : */
+
+                c = document.createElement("DIV");
+                c.innerHTML = selElmnt.options[j].innerHTML;
+                c.addEventListener("click", function (e) {
+
+                    /* Lorsqu'un élément est cliqué, mettre à jour la boîte de sélection originale,
+                    et l'élément sélectionné : */
+
+                    var y, i, k, s, h, sl, yl;
+                    s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                    sl = s.length;
+                    h = this.parentNode.previousSibling;
+                    for (i = 0; i < sl; i++) {
+                        if (s.options[i].innerHTML == this.innerHTML) {
+                            s.selectedIndex = i;
+                            h.innerHTML = this.innerHTML;
+                            y = this.parentNode.getElementsByClassName("same-as-selected");
+                            yl = y.length;
+                            for (k = 0; k < yl; k++) {
+                                y[k].removeAttribute("class");
+                            }
+                            this.setAttribute("class", "same-as-selected");
+                            break;
+                        }
+                    }
+                    h.click();
+                });
+                b.appendChild(c);
+            }
+            x[i].appendChild(b);
+            a.addEventListener("click", function (e) {
+
+                /* Lorsque la boîte de sélection est cliqué, fermer toutes les autres boîtes de sélection,
+                et ouvre/ferme la boîte de sélection actuelle : */
+
+                e.stopPropagation();
+                closeAllSelect(this);
+                this.nextSibling.classList.toggle("select-hide");
+                this.classList.toggle("select-arrow-active");
+            });
+        }
+
+        /* Une fonction qui fermera toutes les boîtes de sélection dans le document,
+            à l'exception de la boîte de sélection actuelle : */
+
+        function closeAllSelect(elmnt) {
+            var x, y, i, xl, yl, arrNo = [];
+            x = document.getElementsByClassName("select-items");
+            y = document.getElementsByClassName("select-selected");
+            xl = x.length;
+            yl = y.length;
+            for (i = 0; i < yl; i++) {
+                if (elmnt == y[i]) {
+                    arrNo.push(i)
+                } else {
+                    y[i].classList.remove("select-arrow-active");
+                }
+            }
+            for (i = 0; i < xl; i++) {
+                if (arrNo.indexOf(i)) {
+                    x[i].classList.add("select-hide");
+                }
+            }
+        }
+
+        /* Si l'utilisateur clique n'importe où en dehors de la boîte de sélection,
+        fermer toutes les boîtes de sélection : */
+        document.addEventListener("click", closeAllSelect); 
+    </script>
+
+    <!-- Script pour le mode clair/sombre -->
+    <script>
+        const sun = "https://www.uplooder.net/img/image/55/7aa9993fc291bc170abea048589896cf/sun.svg";
+        const moon = "https://www.uplooder.net/img/image/2/addf703a24a12d030968858e0879b11e/moon.svg";
+
+        var theme = "light"; // Commence par le mode clair
+        const body = document.body;
+        const container = document.querySelector(".theme-container");
+        const themeIcon = document.getElementById("theme-icon");
+
+        container.addEventListener("click", toggleTheme);
+
+        setTheme();
+
+        function toggleTheme() {
+            theme = theme === "light" ? "dark" : "light";
+            setTheme();
+        }
+
+        function setTheme() {
+            body.style.backgroundColor = theme === "light" ? 'white' : 'black'; // Si theme = light, applique dark et inversement
+            container.classList.remove(theme === "light" ? "shadow-dark" : "shadow-light");
+            container.classList.add(theme === "light" ? "shadow-light" : "shadow-dark");
+            themeIcon.src = theme === "light" ? sun : moon;
+            toggleDarkMode(theme === "dark");
+        }
+
+        function toggleDarkMode(enable) {
+            if (enable) {
+                body.classList.add("dark-mode");
+            } else {
+                body.classList.remove("dark-mode");
+            }
+        }
+    </script>
+</body>
+</html>
