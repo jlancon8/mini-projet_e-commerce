@@ -31,5 +31,7 @@ Ce mini projet consistait à crée un mini site d'e-commerce responsive sur le s
 <br>
 #### Johan Lançon :
   --> Page accueil, footer, navbar
-<br>
+
+
+
 PS : Les pages & éléments réalisés compte également leurs version responsive
