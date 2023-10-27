@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-* {
-    font-family: 'Montserrat', 'sans-serif';
-    margin: 0;
-    padding: 0;
-}
 
 body {
     overflow-x: hidden;
@@ -276,42 +271,42 @@ hr {
 
 /* DARK MODE */
 
-.dark-mode {
 
-    .navbar {
+
+    .dark-mode .navbar {
         background-color: black;
         border-color: white;
     }
 
-    h1, h2, h4, h6, p {
+    .dark-mode h1, h2, h4, h6, p {
         color: white;
     }
 
-    .counter {
+    .dark-mode .counter {
         border: 1px solid white;
     }
 
-    .counter>span {
+    .dark-mode .counter>span {
         color: white;
     }
 
-    .counter span.minus:hover {
+    .dark-mode .counter span.minus:hover {
         color: black;
     }
 
-    .counter span.plus:hover {
+    .dark-mode .counter span.plus:hover {
         color: black;
     }
 
-    .dropdown {
+    .dark-mode .dropdown {
         border: 1px solid white;
     }
 
-    .select-selected {
+    .dark-mode .select-selected {
         color: white;
     }
 
-    .select-selected:after {
+    .dark-mode .select-selected:after {
         border-color: white transparent transparent transparent;
     }
 
@@ -319,32 +314,32 @@ hr {
         border-color: transparent transparent white;
     }
 
-    .select-items {
+    .dark-mode .select-items {
         color: white;
     }
 
-    .select-items div, .select-selected {
+    .dark-mode .select-items div, .select-selected {
         background-color: black;
     }
 
-    .select-items div:hover, .same-as-selected {
+    .dark-mode .select-items div:hover, .same-as-selected {
         background-color: rgba(128, 128, 128, 1)
     }
 
-    .button {
+    .dark-mode .button {
         box-shadow: white 2px 2px 2px 0px;
         color: black;
     }
 
-    .buyButtons > #addButton {
+    .dark-mode .buyButtons > #addButton {
         background-color: rgb(125, 122, 122);
     }
 
-    #addNow {
+    .dark-mode #addNow {
         background-color: #2F80ED;
     }
 
-    #addButton:hover {
+    .dark-mode #addButton:hover {
         background-color: rgb(97, 96, 96);
         color: white;
         box-shadow: black 2px 2px 2px 0px;
@@ -358,11 +353,11 @@ hr {
         transition: 0.25s ease-out;
     }
 
-    .navbar > a {
+    .dark-mode .navbar > a {
         color: white;
     }
 
-    .leftfooter > a {
+    .dark-mode .leftfooter > a {
         background-color: white;
         box-shadow: rgb(255, 255, 255) 2px 2px 2px 0px;
     }
