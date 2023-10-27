@@ -1,7 +1,7 @@
 # Mini projet e-commerce
 
 ## AquaRider 
-[Site e-commerce](https://jlancon8.github.io/mini-projet_e-commerce/))
+[Site e-commerce](https://jlancon8.github.io/mini-projet_e-commerce/)
 
 ### Membres du groupe :
 
