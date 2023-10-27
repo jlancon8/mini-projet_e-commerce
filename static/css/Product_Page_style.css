@@ -6,6 +6,10 @@ body {
 }
 
 
+h1, h2, h3, h4, p{
+    color: black;
+}
+
 .container {
     display: flex;
     flex-direction: row;
