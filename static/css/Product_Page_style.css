@@ -179,7 +179,7 @@ h1, h2, h3, h4, p{
 }
 
 .select-selected {
-    color: white;
+    color: black;
 }
 
 .select-selected:after {
@@ -204,6 +204,8 @@ h1, h2, h3, h4, p{
     cursor: pointer;
 
 }
+
+
 
 
 .select-items {
