@@ -33,5 +33,6 @@ Ce mini projet consistait à crée un mini site d'e-commerce responsive sur le s
   --> Page accueil, footer, navbar
 
 
-
+<br>
+<br>
 PS : Les pages & éléments réalisés compte également leurs version responsive
