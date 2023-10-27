@@ -298,3 +298,22 @@ main button {
         margin: 10px 0;
     }
 }
+
+
+.dark-mode h2,p {
+  color : white;
+}
+
+.dark-mode aside {
+  color : white;
+}
+
+.dark-mode .product:hover {
+  background-color: black;
+  color : white
+}
+
+.dark-mode .product:hover p {
+  color : white;
+}
+
