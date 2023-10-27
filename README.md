@@ -1,7 +1,7 @@
 # Mini projet e-commerce
 
 ## AquaRider 
-[Site e-commerce](https://jlancon8.github.io/mini-projet_e-commerce/)
+[Lien vers notre site de e-commerce](https://jlancon8.github.io/mini-projet_e-commerce/)
 
 ### Membres du groupe :
 
@@ -14,7 +14,7 @@
 
 ### Présentation :
 
-Ce mini projet consistait à crée un mini site d'e-commerce sur le sujet de notre choix (interactif ou non) à l'aide de maquettes déjà faites.
+Ce mini projet consistait à crée un mini site d'e-commerce responsive sur le sujet de notre choix (interactif ou non) à l'aide de maquettes déjà faites.
 
 <br>
 
@@ -31,3 +31,5 @@ Ce mini projet consistait à crée un mini site d'e-commerce sur le sujet de not
 <br>
 #### Johan Lançon :
   --> Page accueil, footer, navbar
+<br>
+PS : Les pages & éléments réalisés compte également leurs version responsive
