@@ -35,7 +35,6 @@ a {
 .item, .itemactive {
     
     margin-left: 7%;
-    
 }
 
 .itemconnexion, .itemconnexion2 {
@@ -62,7 +61,12 @@ a {
     transition: border-bottom 1s, font-weight 0s; 
     font-weight: bold; 
     border-bottom: 0.5px solid; 
+}
 
+.itemconnexionactive {
+  float: right;
+  margin-right: 6%;
+  font-weight: bold;
 }
 
 
@@ -89,13 +93,6 @@ a {
   justify-content: center;
   align-items: center;
   transition: 0.5s;
-}
-
-.itemconnexionactive {
-  float: right;
-  margin-right: 6%;
-  font-weight: bold;
-
 }
 
 .theme-container:hover {
@@ -132,6 +129,8 @@ a {
   animation-direction: alternate;
 }
 
+/* FIN BOUTON LIGHT/DARK */
+
 /* RESPONSIVE  NAVBAR */
 
 
@@ -139,15 +138,12 @@ a {
   .hamburger-menu {
     display: none;
   }
-
 }
 
 @media (max-width: 656px) {
   .hamburger-menu {
     display: block;
-    padding: 1%;
-
-    
+    padding: 1%; 
   }
   .menu__box {
     z-index: 2;
@@ -158,14 +154,7 @@ a {
   }
 }
 
-
-
-
-
-
-
-
-
+/* FIN RESPONSIVE NAVBAR */
 
 
 /* MENU BURGER */ 
@@ -174,20 +163,25 @@ a {
 #menu__toggle {
   opacity: 0;
 }
+
 #menu__toggle:checked + .menu__btn > span {
   transform: rotate(45deg);
 }
+
 #menu__toggle:checked + .menu__btn > span::before {
   top: 0;
   transform: rotate(0deg);
 }
+
 #menu__toggle:checked + .menu__btn > span::after {
   top: 0;
   transform: rotate(90deg);
 }
-#menu__toggle:checked ~ .menu__box { /* Afficher le panel de gauche */
+
+#menu__toggle:checked ~ .menu__box { /* affiche le panel de gauche */
   left: 0 !important;
 }
+
 .menu__btn {
   position: absolute;
   top: 20px;
@@ -197,6 +191,7 @@ a {
   cursor: pointer;
   z-index: 10;
 }
+
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
@@ -207,14 +202,17 @@ a {
   background-color: #616161;
   transition-duration: .25s;
 }
+
 .menu__btn > span::before {
   content: '';
   top: -8px;
 }
+
 .menu__btn > span::after {
   content: '';
   top: 8px;
 }
+
 .menu__box {
   display: block;
   position: fixed;
@@ -229,6 +227,7 @@ a {
   box-shadow: 6px 6px 18px rgba(0, 0, 0, .4);
   transition-duration: .25s;
 }
+
 .menu__item {
   display: block;
   padding: 12px 24px;
@@ -238,6 +237,7 @@ a {
   text-decoration: none;
   transition-duration: .25s;
 }
+
 .menu__item:hover {
   background-color: #CFD8DC;
 }
