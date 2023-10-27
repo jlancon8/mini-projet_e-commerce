@@ -304,9 +304,12 @@ main button {
   color : white;
 }
 
-.dark-mode h1 {
+.dark-mode h1, h3, h4, h5 {
     color:white;
+}
 
+.dark-mode .header h1 {
+    color:white;
 }
 
 .dark-mode p {
