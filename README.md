@@ -32,6 +32,7 @@ Ce mini projet consistait à crée un mini site d'e-commerce responsive sur le s
 #### Johan Lançon :
   --> <a href="https://jlancon8.github.io/mini-projet_e-commerce/" target="_blank">Page d'accueil</a>, footer, navbar
 
+
 <br>
 <br>
 PS : Les pages & éléments réalisés compte également leurs versions responsive
