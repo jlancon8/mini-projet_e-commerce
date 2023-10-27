@@ -14,10 +14,10 @@
     <!-- NAVBAR DEBUT -->
     <div class="navbar-container">
         <div class="navbar">
-            <a href="" class="item">Accueil</a>
-            <a href="" class="itemactive">Produits</a>
-            <a href="" class="item">Magasin</a>
-            <a href="" class="item">Panier</a>
+            <a href="index.html" class="item">Accueil</a>
+            <a href="produits.html" class="itemactive">Produits</a>
+            <a href="magasin.html" class="item">Magasin</a>
+            <a href="panier.html" class="item">Panier</a>
             <a href="" class="itemconnexion">Connexion</a>
             <div class="hamburger-menu">
                 <input id="menu__toggle" type="checkbox" />
@@ -28,10 +28,10 @@
            
             
                 <ul class="menu__box">
-                  <li><a class="menu__item" href="#">Accueil</a></li>
-                  <li><a class="menu__item" href="#">Produits</a></li>
-                  <li><a class="menu__item" href="#">Magasin</a></li>
-                  <li><a class="menu__item" href="#">Panier</a></li>
+                  <li><a class="menu__item" href="index.html">Accueil</a></li>
+                  <li><a class="menu__item" href="produits.html">Produits</a></li>
+                  <li><a class="menu__item" href="magasin.html">Magasin</a></li>
+                  <li><a class="menu__item" href="panier.html">Panier</a></li>
                   <li><a class="menu__item" href="#">Connexion</a></li>
                 </ul>
                 
@@ -325,39 +325,7 @@
     </script>
 
     <!-- Script pour le mode clair/sombre -->
-    <script>
-        const sun = "https://www.uplooder.net/img/image/55/7aa9993fc291bc170abea048589896cf/sun.svg";
-        const moon = "https://www.uplooder.net/img/image/2/addf703a24a12d030968858e0879b11e/moon.svg";
-
-        var theme = "light"; // Commence par le mode clair
-        const body = document.body;
-        const container = document.querySelector(".theme-container");
-        const themeIcon = document.getElementById("theme-icon");
-
-        container.addEventListener("click", toggleTheme);
-
-        setTheme();
-
-        function toggleTheme() {
-            theme = theme === "light" ? "dark" : "light";
-            setTheme();
-        }
-
-        function setTheme() {
-            body.style.backgroundColor = theme === "light" ? 'white' : 'black'; // Si theme = light, applique dark et inversement
-            container.classList.remove(theme === "light" ? "shadow-dark" : "shadow-light");
-            container.classList.add(theme === "light" ? "shadow-light" : "shadow-dark");
-            themeIcon.src = theme === "light" ? sun : moon;
-            toggleDarkMode(theme === "dark");
-        }
-
-        function toggleDarkMode(enable) {
-            if (enable) {
-                body.classList.add("dark-mode");
-            } else {
-                body.classList.remove("dark-mode");
-            }
-        }
-    </script>
+    <script src="static/js/lightdark.js"></script>
+ 
 </body>
 </html>
