@@ -15,18 +15,18 @@
     height: 200px;
 }
 
-.Shortboard>h6 {
+.Shortboard > h6 {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.Shortboard>input {
+.Shortboard > input {
     width: 300px;
     height: 40px;
     margin-left: 200px;
 }
 
-.Shortboard>a {
+.Shortboard > a {
     max-width: 30px;
     box-shadow: black 1px 1px 1px 0px;
     padding: 2px;
@@ -35,7 +35,7 @@
     transition: 0.25s ease-in;
 }
 
-.Shortboard>a:hover {
+.Shortboard > a:hover {
     color: white;
     background-color: hsl(0, 0%, 0%);
     box-shadow: white 2px 2px 2px 0px;
@@ -52,18 +52,18 @@
     height: 200px;
 }
 
-.Longboard>h6 {
+.Longboard > h6 {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.Longboard>input {
+.Longboard > input {
     width: 300px;
     height: 40px;
     margin-left: 200px;
 }
 
-.Longboard>a {
+.Longboard > a {
     max-width: 30px;
     box-shadow: black 1px 1px 1px 0px;
     padding: 2px;
@@ -72,7 +72,7 @@
     transition: 0.25s ease-in;
 }
 
-.Longboard>a:hover {
+.Longboard > a:hover {
     color: white;
     background-color: hsl(0, 0%, 0%);
     box-shadow: white 2px 2px 2px 0px;
@@ -108,13 +108,13 @@
     text-align: left;
 }
 
-.block>input {
+.block > input {
     width: 300px;
     height: 40px;
     margin-left: 200px;
 }
 
-.block>a {
+.block > a {
     max-width: 30px;
     box-shadow: black 1px 1px 1px 0px;
     padding: 2px;
@@ -123,7 +123,7 @@
     transition: 0.25s ease-in;
 }
 
-.block>a:hover {
+.block > a:hover {
     color: white;
     background-color: hsl(0, 0%, 0%);
     box-shadow: white 2px 2px 2px 0px;
