@@ -21,16 +21,16 @@ Ce mini projet consistait à crée un mini site d'e-commerce responsive sur le s
 ### Répartition du travail :
 
 #### Lucas Fulcrand : 
-  --> Page produits
+  --> [Page produits](https://jlancon8.github.io/mini-projet_e-commerce/produits.html)
 <br>
 #### Axel Fumey Jean-Jean
-  --> Page panier
+  --> [Page panier](https://jlancon8.github.io/mini-projet_e-commerce/panier.html)
 <br>
 #### Jean-Baptiste Frohley
-  --> Page magasin
+  --> [Page magasin](https://jlancon8.github.io/mini-projet_e-commerce/magasin.html)
 <br>
 #### Johan Lançon :
-  --> Page accueil, footer, navbar
+  --> [Page d'accueil](https://jlancon8.github.io/mini-projet_e-commerce/), footer, navbar
 
 
 <br>
