@@ -3,7 +3,7 @@
 ## AquaRider 
 [Site e-commerce](https://jlancon8.github.io/mini-projet_e-commerce/))
 
-## Membres du groupe :
+### Membres du groupe :
 
 - [Fulcrand Lucas]
 - [Fumey Jean Jean Axel]  
@@ -12,22 +12,22 @@
 
 <br>
 
-## Présentation :
+### Présentation :
 
 Ce mini projet consistait à crée un mini site d'e-commerce sur le sujet de notre choix (interactif ou non) à l'aide de maquettes déjà faites.
 
 <br>
 
-## Répartition du travail :
+### Répartition du travail :
 
-# Lucas Fulcrand : 
+#### Lucas Fulcrand : 
   --> Page produits
 <br>
-# Axel Fumey Jean-Jean
+#### Axel Fumey Jean-Jean
   --> Page panier
 <br>
-# Jean-Baptiste Frohley
+#### Jean-Baptiste Frohley
   --> Page magasin
 <br>
-# Johan Lançon :
+#### Johan Lançon :
   --> Page accueil, footer, navbar
