@@ -1,1 +1,1 @@
-### mini-projet_e-commerce --> AquaRider
+# Mini-projet d'un site de e-commerce --> AquaRider
