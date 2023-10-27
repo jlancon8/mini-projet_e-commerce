@@ -278,7 +278,27 @@ hr {
         border-color: white;
     }
 
-    .dark-mode h1, h2, h4, h6, p {
+    .dark-mode h1 {
+        color: white;
+    }
+
+    .dark-mode h2 {
+        color: white;
+    }
+ 
+    .dark-mode h3 {
+        color: white;
+    }
+
+    .dark-mode h4 {
+        color: white;
+    }
+
+    .dark-mode h6 {
+        color: white;
+    }
+    
+    .dark-mode p {
         color: white;
     }
 
