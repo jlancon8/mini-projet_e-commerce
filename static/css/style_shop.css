@@ -304,6 +304,10 @@ main button {
   color : white;
 }
 
+.dark-mode p {
+    color: white;
+}
+
 .dark-mode aside {
   color : white;
 }
