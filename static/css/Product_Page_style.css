@@ -179,7 +179,7 @@ h1, h2, h3, h4, p{
 }
 
 .select-selected {
-    color: black;
+    color: white;
 }
 
 .select-selected:after {
