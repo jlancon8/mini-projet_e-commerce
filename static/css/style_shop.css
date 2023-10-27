@@ -261,6 +261,10 @@ main button {
     color: gray;
 }
 
+.dark-mode #pastille-panier {
+    color: white;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .container {
